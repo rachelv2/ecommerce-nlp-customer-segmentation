@@ -82,6 +82,8 @@ beyond-ratings-nlp-clustering/
 │   ├── figures/
 │   └── tables/
 │
+├── streamlit/
+│
 ├── README.md
 └── pyproject.toml
 ```
