@@ -1,0 +1,31 @@
+[project]
+name = "beyond-ratings-nlp-clustering"
+version = "0.1.0"
+description = "NLP and customer segmentation analysis on Olist e-commerce data"
+authors = [
+    { name = "rachel" },
+    { name = "goncalo" },
+    { name = "sarah" }
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "jupyter",
+    "notebook",
+    "tqdm",
+    
+    # NLP
+    "transformers",
+    
+    # Optional but useful
+    "nltk",
+    "spacy",
+    
+    # Streamlit (bonus)
+    "streamlit"
+]
