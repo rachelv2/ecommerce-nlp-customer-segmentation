@@ -426,5 +426,3 @@ The strongest business takeaway is:
 > **Delivery performance directly affects customer emotion, and angry reviews can serve as an early warning signal for operational problems.**
 
 Improving logistics reliability, communicating delays proactively, and targeting customers based on behavior can help Olist create a better, more personalized e-commerce experience.
-
-```
