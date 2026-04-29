@@ -65,6 +65,18 @@ with col_right:
     plt.close()
 
 st.markdown("---")
+st.markdown("### Explore the Data")
+score_filter = st.selectbox("Filter by actual star rating", [1, 2, 3, 4, 5])
+show_mismatch_only = st.checkbox("Show mismatches only")
+filtered = df[df["review_score"] == score_filter]
+if show_mismatch_only:
+    filtered = filtered[filtered["mismatch"]]
+st.dataframe(
+    filtered[["review_score", "predicted_score", "predicted_label", "confidence", "review_text"]].head(20),
+    use_container_width=True
+)
+
+st.markdown("---")
 st.markdown("### Key Findings")
 st.markdown("""
 | Metric | Value |
@@ -82,15 +94,3 @@ st.markdown("""
 2. **Treat 3-star as a warning** — it reads far more negative than it appears
 3. **Use NLP alongside ratings** for any customer feedback pipeline
 """)
-
-st.markdown("---")
-st.markdown("### Explore the Data")
-score_filter = st.selectbox("Filter by actual star rating", [1, 2, 3, 4, 5])
-show_mismatch_only = st.checkbox("Show mismatches only")
-filtered = df[df["review_score"] == score_filter]
-if show_mismatch_only:
-    filtered = filtered[filtered["mismatch"]]
-st.dataframe(
-    filtered[["review_score", "predicted_score", "predicted_label", "confidence", "review_text"]].head(20),
-    use_container_width=True
-)
