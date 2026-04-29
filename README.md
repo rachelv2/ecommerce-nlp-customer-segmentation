@@ -428,4 +428,3 @@ The strongest business takeaway is:
 Improving logistics reliability, communicating delays proactively, and targeting customers based on behavior can help Olist create a better, more personalized e-commerce experience.
 
 ```
-```
