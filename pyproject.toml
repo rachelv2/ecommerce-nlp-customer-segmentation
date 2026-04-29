@@ -18,14 +18,13 @@ dependencies = [
     "jupyter",
     "notebook",
     "tqdm",
-    
     # NLP
     "transformers",
-    
     # Optional but useful
     "nltk",
     "spacy",
-    
     # Streamlit (bonus)
-    "streamlit"
+    "streamlit",
+    "scipy>=1.15.3",
+    "ipykernel>=7.2.0",
 ]
