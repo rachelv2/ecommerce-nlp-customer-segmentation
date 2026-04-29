@@ -85,7 +85,6 @@ beyond-ratings-nlp-clustering/
 ├── streamlit/
 │
 ├── README.md
-└── requirements.txt
 └── pyproject.toml
 ```
 
