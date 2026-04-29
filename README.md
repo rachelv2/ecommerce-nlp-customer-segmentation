@@ -86,7 +86,6 @@ beyond-ratings-nlp-clustering/
 │
 ├── README.md
 └── requirements.txt
-```
 └── pyproject.toml
 ```
 
